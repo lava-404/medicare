@@ -5,7 +5,7 @@
 
 import mongoose from "mongoose";
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/vishranti_inventory";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://lavanya:medicare@cluster0.vkfxsla.mongodb.net/?appName=Cluster0";
 
 const ItemSchema = new mongoose.Schema(
   {
