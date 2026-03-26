@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Modal from "./Modal";
-import { IItem } from "@/types";
+import { Category, IItem } from "@/types";
 
 interface AddItemModalProps {
   onClose: () => void;
@@ -84,7 +84,7 @@ export default function AddItemModal({ onClose, onSaved, editItem }: AddItemModa
           <label className="block text-sm font-medium text-gray-700 mb-1">Category *</label>
           <select
             value={form.category}
-            onChange={(e) => setForm({ ...form, category: e.target.value })}
+            onChange={(e) => setForm({ ...form, category: e.target.value as Category })}
             className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="Ration">Ration</option>
